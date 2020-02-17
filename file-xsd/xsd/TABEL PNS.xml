@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 sp1 (http://www.altova.com) by rafif favian (gunadarma) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="TABEL PNS">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="ID">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="32"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="STATUS_CPNS_PNS" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="JENIS_PEGAWAI_ID">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="2"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="TMT_CPNS" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="TGL_SK_CPNS" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="NOMOR_SK_CPNS" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="40"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="JENIS_PENGADAAN_ID" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="NOMOR_SPMT" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="50"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="TMT_PNS" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="TGL_SK_PNS" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="NOMOR_SK_PNS" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="50"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="PERTEK_CPNS_PNS_L2TH_TANGGAL" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="PERTEK_CPNS_PNS_L2TH_NOMOR" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="30"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="KARTU_PEGAWAI" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="30"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="TGL_STTPL" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="NOMOR_STTPL" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="70"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="TANGGAL_DOKTER_PNS" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="NOMOR_DOKTER_PNS" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="70"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="NCSISTIME" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:time">
+            <xs:maxLength value="6"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+  <xs:key name="TablePns_PrimaryKey_1">
+   <xs:selector xpath="."/>
+   <xs:field xpath="ID"/>
+  </xs:key>
+ </xs:element>
+</xs:schema>

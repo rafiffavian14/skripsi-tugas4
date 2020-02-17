@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 sp1 (http://www.altova.com) by rafif favian (gunadarma) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+ <xs:element name="TABLE PNS">
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element name="ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="KPKN_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="INSTANSI_KERJA_ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="INSTANSI_INDUK_ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="JENIS_PEGAWAI_ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="2"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="JABATAN_FUNGSIONAL_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="KEDUDUKAN_HUKUM_ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="2"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="JABATAN_FUNGSIONAL_UMUM_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="GOLONGAN_ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="2"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="LOKASI_KERJA_ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NIP_LAMA" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="9"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NIP_BARU">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="18"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="STATUS_CPNS_PNS">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NOMOR_SK_CPNS" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="40"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TGL_SK_CPNS" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NOMOR_SK_PNS" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="50"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TGL_SK_PNS" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NOMOR_STTPL" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="70"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TGL_STTPL" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TGL_TUGAS" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="KARTU_PEGAWAI" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="30"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="ASKES_NOMOR" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="40"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TMT_GOLONGAN" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TMT_ESELON" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="KREDIT_UTAMA" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:decimal">
+       <xs:totalDigits value="9"/>
+       <xs:fractionDigits value="4"/>
+       <xs:minExclusive value="-1000"/>
+       <xs:maxExclusive value="1000"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="KREDIT_PENUMJANG" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:decimal">
+       <xs:totalDigits value="9"/>
+       <xs:fractionDigits value="4"/>
+       <xs:minExclusive value="-1000"/>
+       <xs:maxExclusive value="1000"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="SATUAN_KERJA_INDUK_ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="SATUAN_KERJA_KERJA_ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="UNOR_ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TMT_CPNS" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TMT_PNS" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="GOLONGAN_AWAL_ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TMT_JABATAN" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="JENIS_JABATAN_ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:decimal">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TANGGAL_DITETAPKAN_NIP" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NP_CPNS_NOMOR">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="30"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TANGGAL_DOKTER_PNS" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NOMOR_DOKTER_PNS">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="70"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NP_CPNS_TANGGAL" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NP_PNS_TANGGAL" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NP_PNS_NOMOR" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="30"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NOMOR_SPMT" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="50"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="SPESIMEN_PENG" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="SPESIMEN_KP" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="SPESIMEN_PENS" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="LATIHAN_STRUKTURAL_NAMA" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="40"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TMT_MELAKSANAKAN_TUGAS" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TMT_PENSIUN" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="SPESIMEN_PERE" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="MK_TAHUN" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:decimal">
+       <xs:maxLength value="2"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="MK_BULAN" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:decimal">
+       <xs:maxLength value="2"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="SUDAH_DPCP" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="PERTEK_CPNS_PNS_L2TH_NOMOR" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="30"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="PERTEK_CPNS_PNS_L2TH_TANGGAL" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TASPEN_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="3"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NCSISTIME" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:time">
+       <xs:maxLength value="6"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="SK_KONV_NOMOR" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="30"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="SK_KONV_TANGGAL" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="SK_KONV_URUT" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:decimal">
+       <xs:maxLength value="8"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="SK_PERBAIKAN_TANGGAL" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="SPESIMEN_NIP" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="ESELON_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="2"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="JENIS_PENGADAAN_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="SPESIMEN_PEJABAT_CPNS" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="150"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="KPE" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="3"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="GAJI_POKOK" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="38"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+   </xs:sequence>
+  </xs:complexType>
+  <xs:key name="TablePns_PrimaryKey_1">
+   <xs:selector xpath="."/>
+   <xs:field xpath="ID"/>
+  </xs:key>
+ </xs:element>
+</xs:schema>

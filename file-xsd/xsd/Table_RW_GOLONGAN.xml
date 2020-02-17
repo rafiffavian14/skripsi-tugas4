@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 sp1 (http://www.altova.com) by rafif favian (gunadarma) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="RW_GOLONGAN">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="ID">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="32"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="JENIS_KP_ID" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="3"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="GOLONGAN_ID">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="2"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="PNS_ORANG_ID">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="32"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="SK_NOMOR" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="70"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="SK_TANGGAL" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="NOMOR_LETTER_BKN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="30"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="TANGGAL_LETTER_BKN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="TMT_GOLONGAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="JUMLAH_KREDIT_UTAMA" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="8"/>
+            <xs:fractionDigits value="3"/>
+            <xs:minExclusive value="-1000"/>
+            <xs:maxExclusive value="1000"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="JUMLAH_KREDIT_TAMBAHAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="8"/>
+            <xs:fractionDigits value="3"/>
+            <xs:minExclusive value="-1000"/>
+            <xs:maxExclusive value="1000"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="ASAL_ID" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="32"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="ASAL_NAMA" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="20"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="STATUS_SELESAI" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="1"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="MK_GOLONGAN_TAHUN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:maxLength value="2"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="MK_GOLONGAN_BULAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:maxLength value="2"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="NCSISTIME" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:time">
+            <xs:maxLength value="6"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+  <xs:key name="TableRwGolongan_PrimaryKey_1">
+   <xs:selector xpath="."/>
+   <xs:field xpath="ID"/>
+  </xs:key>
+ </xs:element>
+</xs:schema>

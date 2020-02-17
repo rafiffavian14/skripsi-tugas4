@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 sp1 (http://www.altova.com) by rafif favian (gunadarma) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+ <xs:element name="TABEL ORANG">
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element name="ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="KABUPATEN_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="JENIS_ID_DOKUMEN_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="JENIS_KAWIN_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="AGAMA_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="IBU_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="AYAH_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NAMA">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="55"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="GELAR_DEPAN" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="25"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="GELAR_BLK" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="30"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TGL_LHR" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="JENIS_KELAMIN" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NOMOR_ID_DOCUMENT" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="30"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="AKTA_MENINGGAL" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="40"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TGL_MENINGGAL" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NOMOR_HP" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="40"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NOMOR_TELPON" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="40"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="EMAIL" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="50"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="AKTA_KELAHIRAN" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="30"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="KET_SEHAT_TANGGAL" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="KET_SEHAT_DOKTER" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="40"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="KET_BEBAS_NARKOBA_NOMOR" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="50"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="KET_BEBAS_NARKOBA_TANGGAL" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="KET_KELAKUANBAIK_NOMOR" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="50"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="KET_KELAKUANBAIK_TANGGAL" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="ALAMAT" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="150"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NPWP_NOMOR" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="30"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NPWP_TANGGAL" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="BPJS" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="50"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TASPEN_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="3"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NCSISTIME" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:time">
+       <xs:maxLength value="6"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+   </xs:sequence>
+  </xs:complexType>
+  <xs:key name="TableOrang_PrimaryKey_1">
+   <xs:selector xpath="."/>
+   <xs:field xpath="ID"/>
+  </xs:key>
+ </xs:element>
+</xs:schema>

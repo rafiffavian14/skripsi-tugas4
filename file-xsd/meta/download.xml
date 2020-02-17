@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 sp1 (http://www.altova.com) by rafif favian (gunadarma) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="download">
+    <xs:complexType>
+    <xs:sequence>
+      <xs:element name="ID">
+      <xs:simpleType>
+        <xs:restriction base="xs:integer">
+        <xs:maxLength value="8"/>
+        <xs:minLength value="1"/>
+        </xs:restriction>
+      </xs:simpleType>
+      </xs:element>
+      <xs:element name="name">
+      <xs:simpleType>
+        <xs:restriction base="xs:varchar">
+        <xs:maxLength value="255"/>
+        <xs:minLength value="1"/>
+        </xs:restriction>
+      </xs:simpleType>
+      </xs:element>
+      <xs:element name="file">
+      <xs:simpleType>
+        <xs:restriction base="xs:varchar">
+        <xs:maxLength value="255"/>
+        <xs:minLength value="1"/>
+        </xs:restriction>
+      </xs:simpleType>
+      </xs:element>
+      <xs:element name="id_table">
+      <xs:simpleType>
+        <xs:restriction base="xs:integer">
+        <xs:maxLength value="8"/>
+        <xs:minLength value="1"/>
+        </xs:restriction>
+      </xs:simpleType>
+      </xs:element>
+      <xs:element name="id_user">
+      <xs:simpleType>
+        <xs:restriction base="xs:integer">
+        <xs:maxLength value="8"/>
+        <xs:minLength value="1"/>
+        </xs:restriction>
+      </xs:simpleType>
+      </xs:element>
+      <xs:element name="created_at" nillable="true">
+      <xs:simpleType>
+        <xs:restriction base="xs:timestamp">
+        
+        <xs:minLength value="1"/>
+        </xs:restriction>
+      </xs:simpleType>
+      </xs:element>
+      <xs:element name="updated_at" nillable="true">
+      <xs:simpleType>
+        <xs:restriction base="xs:timestamp">     
+        <xs:minLength value="1"/>
+        </xs:restriction>
+      </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    </xs:complexType>
+    <xs:key name="download_PrimaryKey_1">
+    <xs:selector xpath="."/>
+    <xs:field xpath="ID"/>
+    </xs:key>
+  </xs:element>
+</xs:schema>

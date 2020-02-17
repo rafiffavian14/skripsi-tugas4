@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 sp1 (http://www.altova.com) by rafif favian (gunadarma) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="TABEL RW_ANGKA_KREDIT">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="ID">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="32"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="PNS_ID">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="32"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="NOMOR_SK" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="TANGGAL_SK" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="BULAN_MULAI_PENAILAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:maxLength value="2"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="TAHUN_MULAI_PENAILAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:maxLength value="4"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="BULAN_SELESAI_PENAILAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:maxLength value="2"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="TAHUN_SELESAI_PENAILAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:maxLength value="4"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="KREDIT_UTAMA_BARU" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="9"/>
+            <xs:fractionDigits value="3"/>
+            <xs:minExclusive value="-1000"/>
+            <xs:maxExclusive value="1000"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="KREDIT_PENUNJANG_BARU" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="9"/>
+            <xs:fractionDigits value="3"/>
+            <xs:minExclusive value="-1000"/>
+            <xs:maxExclusive value="1000"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="KREDIT_BARU_TOTAL" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="9"/>
+            <xs:fractionDigits value="3"/>
+            <xs:minExclusive value="-1000"/>
+            <xs:maxExclusive value="1000"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="NCSISTIME" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:time">
+            <xs:maxLength value="6"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+  <xs:key name="TableRwAngkaKredit_PrimaryKey_1">
+   <xs:selector xpath="."/>
+   <xs:field xpath="ID"/>
+  </xs:key>
+ </xs:element>
+</xs:schema>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 sp1 (http://www.altova.com) by rafif favian (gunadarma) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+ <xs:element name="TABEL RW_JABATAN">
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element name="ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="JABATAN_FUNGSIONAL_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="UNOR_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="ESELON_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="2"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="INSTANSI_ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="JENIS_JABATAN_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:decimal">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="JABATAN_FUNGSIONAL_UMUM_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="PNS_ORANG_ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TMT_JABATAN" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NOMOR_SK" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="70"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TANGGAL_SK" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="SATUAN_KERJA_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NO_SK_SERTIFIKASI" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="70"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TANGGAL_SK_SERTIFIKASI" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TANGGAL_BERLAKU" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TANGGAL_EXPIRED" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NCSISTIME" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:time">
+       <xs:maxLength value="6"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+   </xs:sequence>
+  </xs:complexType>
+  <xs:key name="TableRwJabatan_PrimaryKey_1">
+   <xs:selector xpath="."/>
+   <xs:field xpath="ID"/>
+  </xs:key>
+ </xs:element>
+</xs:schema>

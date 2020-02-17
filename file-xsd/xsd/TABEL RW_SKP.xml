@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 sp1 (http://www.altova.com) by rafif favian (gunadarma) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="TABEL RW_SKP">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="ID">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="32"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="PEJABATPENILAI_ORANG_ID" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="32"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="PNSDINILAI_ORANG_ID">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="32"/>
+            <xs:minLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="TAHUN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:maxLength value="4"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="NILAI_SKP" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="5"/>
+            <xs:fractionDigits value="2"/>
+            <xs:minExclusive value="-1000"/>
+            <xs:maxExclusive value="1000"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="ORIENTASI_PELAYANAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="5"/>
+            <xs:fractionDigits value="2"/>
+            <xs:minExclusive value="-1000"/>
+            <xs:maxExclusive value="1000"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="INTEGRITAS" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="5"/>
+            <xs:fractionDigits value="2"/>
+            <xs:minExclusive value="-1000"/>
+            <xs:maxExclusive value="1000"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="KOMITMEN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="5"/>
+            <xs:fractionDigits value="2"/>
+            <xs:minExclusive value="-1000"/>
+            <xs:maxExclusive value="1000"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="DISIPLIN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="5"/>
+            <xs:fractionDigits value="2"/>
+            <xs:minExclusive value="-1000"/>
+            <xs:maxExclusive value="1000"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="KERJASAMA" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="5"/>
+            <xs:fractionDigits value="2"/>
+            <xs:minExclusive value="-1000"/>
+            <xs:maxExclusive value="1000"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="KEPEMIMPINAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="5"/>
+            <xs:fractionDigits value="2"/>
+            <xs:minExclusive value="-1000"/>
+            <xs:maxExclusive value="1000"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="NILAI_PERILAKU_KERJA" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="5"/>
+            <xs:fractionDigits value="2"/>
+            <xs:minExclusive value="-1000"/>
+            <xs:maxExclusive value="1000"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="NILAI_PRESTASI_KERJA" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="5"/>
+            <xs:fractionDigits value="2"/>
+            <xs:minExclusive value="-1000"/>
+            <xs:maxExclusive value="1000"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="ATASAN_NON_PNS_ID" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="32"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="ATASAN_PENILAI_JABATAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="250"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="PENILAI_JABATAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="100"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="PENILAI_GOLONGAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="30"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="ATASAN_PENILAI_GOLONGAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="30"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="PENILAI_TMT_GOLONGAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="ATASAN_PENILAI_TMT_GOLONGAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:date"/>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="PENILAI_UNOR_NAMA" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="100"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="ATASAN_PENILAI_UNOR_NAMA" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="250"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="PENILAI_NAMA" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="100"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="ATASAN_PENILAI_NAMA" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="100"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="PENILAI_NIP_NRP" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="30"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="ATASAN_PENILAI_NIP_NRP" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="30"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="STATUS_PENILAI" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="9"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="STATUS_ATASAN_PENILAI" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="9"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="JENIS_JABATAN" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:string">
+            <xs:maxLength value="1"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+            <xs:element name="NCSISTIME" nillable="true" minOccurs="0">
+            <xs:simpleType>
+            <xs:restriction base="xs:time">
+            <xs:maxLength value="6"/>
+            </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+  <xs:key name="TableRwSkp_PrimaryKey_1">
+   <xs:selector xpath="."/>
+   <xs:field xpath="ID"/>
+  </xs:key>
+ </xs:element>
+</xs:schema>

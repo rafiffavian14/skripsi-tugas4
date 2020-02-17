@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 sp1 (http://www.altova.com) by rafif favian (gunadarma) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+ <xs:element name="TABEL TABEL ORANG_PENDIDIKAN">
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element name="ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="ORANG_ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="PENDIDIKAN_ID">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TAHUN_LULUS" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:decimal">
+       <xs:maxLength value="4"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NOMOR_IJAZAH" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="60"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NAMA_SEK" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="150"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="GLR_DEPAN" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="25"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="GLR_BELAKANG" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="25"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="KEPALA" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="30"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="IS_PENDIDIKAN_PERTAMA" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="NCSISTIME" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:time">
+       <xs:maxLength value="6"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="TGL_TAHUN_LULUS" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="SEKOLAH_ID" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="32"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+    <xs:element name="IS_PENDIDIKAN_TERAKHIR" nillable="true" minOccurs="0">
+     <xs:simpleType>
+      <xs:restriction base="xs:string">
+       <xs:maxLength value="1"/>
+       <xs:minLength value="1"/>
+      </xs:restriction>
+     </xs:simpleType>
+    </xs:element>
+   </xs:sequence>
+  </xs:complexType>
+  <xs:key name="TableOrangPendidikan_PrimaryKey_1">
+   <xs:selector xpath="."/>
+   <xs:field xpath="ID"/>
+  </xs:key>
+ </xs:element>
+</xs:schema>
